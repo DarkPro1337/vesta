@@ -1,0 +1,294 @@
+{{ with .Site.Params.banner }}
+  {{ if .enable }}
+  {{ "<!-- Site Hero Start -->" | safeHTML }}
+  <style>
+  .main {
+      margin: 0px auto;
+      position: relative;
+      transition: 0.25s ease-out;
+      width: 1264px;
+  }
+  
+  p {
+    font-size: 8pt;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .hero_main {
+    position: relative;
+    display: block;
+    background: #fff url(../img/main.jpg) no-repeat left top;
+    background-size: cover;
+    object-position: 40% center;
+    height: 514px;
+    width: 800px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    margin: 0px auto;
+    padding-left: 24px;
+    margin-right: 18px;
+    transition: 0.25s ease-out;
+    box-sizing: unset;
+  }
+
+  .hero_main .title {
+      flex-shrink: 0;
+      font-weight: bold;
+      font-size: 3.125rem;
+      line-height: 1;
+      width: 510px;
+  }
+
+  .counters {
+      position: relative;
+      display: flex;
+      height: 228px;
+      width: 182px;
+      background: url(../img/counter_bg.png) no-repeat left top;
+      background-size: cover;
+      color: #fff;
+      padding-top: 20px;
+      padding-left: 20px;
+      background-color: #fff;
+      transition: 0.25s ease-out;
+      margin-right: 18px;
+      margin-bottom: 18px;
+      box-sizing: unset;
+  }
+
+  .counters:hover {
+      box-shadow: inset 0px 0px 400px 110px #ad1114a4, 0px 0px 15px 8px #ad1114a4;;
+  }
+
+  .counters .title {
+      flex-shrink: 0;
+      font-weight: bold;
+      font-size: 12pt;
+      line-height: 1;
+      width: 100px;
+  }
+
+  .counters .img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      -webkit-user-drag: none;
+      overflow: hidden;
+  }
+
+  .payment {
+      position: relative;
+      display: flex;
+      height: 228px;
+      width: 182px;
+      background: url(../img/payment_bg.png) no-repeat left top;
+      background-size: cover;
+      color: #fff;
+      padding-top: 20px;
+      padding-left: 20px;
+      background-color: #fff;
+      transition: 0.25s ease-out;
+      margin-right: 18px;
+      box-sizing: unset;
+  }
+
+  .payment:hover {
+      box-shadow: inset 0px 0px 400px 110px #ad1114a4, 0px 0px 15px 8px #ad1114a4;;
+  }
+
+  .payment .title {
+      flex-shrink: 0;
+      font-weight: bold;
+      font-size: 12pt;
+      line-height: 1;
+      width: 100px;
+  }
+
+  .payment .img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      -webkit-user-drag: none;
+      overflow: hidden;
+  }
+
+  .request {
+      position: relative;
+      display: flex;
+      height: 228px;
+      width: 182px;
+      background: url(../img/request_bg.png) no-repeat left top;
+      background-size: cover;
+      color: #fff;
+      padding-top: 20px;
+      padding-left: 20px;
+      background-color: #fff;
+      transition: 0.25s ease-out;
+      margin-right: 18px;
+      margin-bottom: 18px;
+      box-sizing: unset;
+  }
+
+  .request:hover {
+      box-shadow: inset 0px 0px 400px 110px #ad1114a4, 0px 0px 15px 8px #ad1114a4;;
+  }
+
+  .request .title {
+      flex-shrink: 0;
+      font-weight: bold;
+      font-size: 12pt;
+      line-height: 1;
+      width: 100px;
+  }
+
+  .request img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      -webkit-user-drag: none;
+      overflow: hidden;
+  }
+
+  .contacts {
+      font-family: PT Sans, 'Trebuchet MS', Tahoma, Verdana, sans-serif;
+      position: relative;
+      display: block;
+      height: 228px;
+      width: 187px;
+      background-color: #F9F8F8;
+      background-size: cover;
+      color: #505050;
+      padding-top: 20px;
+      padding-left: 15px;
+      transition: 0.25s ease-out;
+      font-size: 8pt;
+      margin-right: 18px;
+      line-height: 1.5;
+      box-sizing: unset;
+  }
+
+  .contacts a {
+      color: #505050;
+  }
+
+  .parent {
+      display: grid;
+      grid-template-columns: repeat(5, min-content);
+      grid-template-rows: repeat(2, min-content);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      margin-top: 110px;
+      margin-bottom: 15px;
+      }
+      
+      .div1 { grid-area: 1 / 1 / 3 / 2; }
+      .div2 { grid-area: 1 / 2 / 2 / 3; }
+      .div3 { grid-area: 2 / 2 / 3 / 3; }
+      .div4 { grid-area: 1 / 3 / 2 / 4; }
+      .div5 { grid-area: 2 / 3 / 3 / 4; }
+      .div6 { grid-area: 1 / 4 / 3 / 6; }
+  </style>
+  
+  <div class="main">
+  <div class="parent">
+    <div class="div1">
+        <div class="hero_main"><div class="title">ВЕРХНЕВОЛЖСКАЯ УПРАВЛЯЮЩАЯ КОМПАНИЯ</div></div>
+    </div>
+    <div class="div2">
+        <div class="counters">
+            <div class="title">ПЕРЕДАТЬ ПОКАЗАНИЯ СЧЁТЧИКОВ</div>
+            <img class="img" src="img/counter_main.png" alt="" />
+        </div>
+    </div>
+    <div class="div3">
+        <div class="payment">
+            <div class="title">ОПЛАТИТЬ УСЛУГИ ЖКХ</div>
+            <img class="img" src="img/payment_main.png" alt="" />
+        </div>
+    </div>
+    <div class="div4">
+        <div class="request">
+            <div class="title">ОСТАВИТЬ ЗАЯВКУ</div>
+            <img class="img" src="img/request_main.png" alt="" />
+        </div>
+    </div>
+    <div class="div5">
+        <div class="contacts">
+            <p style="color: #961518;"><strong>ПАСПОРТНЫЙ СТОЛ</strong><br>
+            <a href="tel:8%20(4852)%2028-05-02"><strong>8 (4852) 28-05-02</strong></a><br />
+            &nbsp;</p>
+            <p style="color: #961518;"><strong>БУХГАЛТЕРИЯ (ПО ПЛАТЕЖАМ)</strong><br />
+            <a href="tel:8%20(4852)%2059-43-20"><strong>8 (4852) 59-43-20</strong></a><br />
+            &nbsp;</p>
+            <p style="color: #961518;"><strong>АВАРИЙНО-РЕМОНТНАЯ СЛУЖБА (КРУГЛОСУТОЧНО)</strong><br />
+            <a href="tel:8%20(4852)%2059-43-10"><strong>8 (4852) 59-43-10</strong></a><br />
+            <strong><a href="tel:8%20(905)%20137-59-69">8 (905) 137-59-69</a></strong><br />
+            <br />
+            <a href="https://ukvvolga.ru/contacts/" style="color: #000;"><strong>ДРУГИЕ КОНТАКТЫ И РЕЖИМ РАБОТЫ &raquo;</strong></a></p>
+        </div>
+    </div>
+    <div class="div6"> </div>
+  </div>
+  </div>
+  <!--
+  <section class="site-hero" style="background-image: url('{{ .background_image }}');">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="site-hero-content text-center">
+            <h3 style="color: white;">{{ .tagline }}</h3>
+            <h1 style="color: white;">
+              {{ .heading }}
+            </h1>
+            <ul class="site-hero-content-buttons">
+              <li>
+                <a href="{{ .primary_button_url | absURL }}" class="btn btn-secondary">
+                  <span class="btn-area">
+                    <span data-text="{{ .primary_button }}">
+                      {{ .primary_button }}
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ .secondary_button_url | absURL }}" class="btn btn-primary">
+                  <span class="btn-area">
+                    <span data-text="{{ .secondary_button }}">
+                      {{ .secondary_button }}
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#counter" class="site-hero-scroll scroll-to">
+      <img src="images/arrow-down.svg" alt="arrow-down">
+    </a>
+  </section>-->
+  {{ "<!-- Site Hero End -->" | safeHTML }}
+  {{ end }}
+{{ end }}
