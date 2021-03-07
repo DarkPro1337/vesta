@@ -3,6 +3,7 @@ languageCode  = "ru-ru"
 title         = "ВЕСТА"
 theme         = "roxo"
 summarylength = 25
+publishDir = "docs"
 
 # Site Menus
 [menu]
