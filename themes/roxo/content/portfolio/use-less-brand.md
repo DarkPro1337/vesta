@@ -1,9 +1,10 @@
 ---
-title: "USE-LESS BRAND"
+title: "В Ярославле начали благоустройство дворов"
 date: 2019-12-23T15:58:10+06:00
 type: portfolio
-image: "images/projects/project-thumb-one.jpg"
-category: ["UI UX"]
+image: "images/projects/746f927c6cf4327dba6341f06a0d96b4.jpg"
+category: ["17 АПРЕЛЯ 2020"]
+previewtext: "Начался ремонт первой дворовой территории из числа запланированных к благоустройству в 2020 году по губернаторскому проекту «Решаем вместе!». В проект попали 22 дворовые территории и 2 общественные..."
 project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
 ---
 

@@ -7,10 +7,10 @@
       position: relative;
       transition: 0.25s ease-out;
       width: 1264px;
+      font-family: montserrat,sans-serif;
   }
   
   p {
-    font-size: 8pt;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-top: 0;
@@ -20,7 +20,7 @@
   .hero_main {
     position: relative;
     display: block;
-    background: #fff url(../vesta/img/main.jpg) no-repeat left top;
+    background: #fff url(../img/main.jpg) no-repeat center center;
     background-size: cover;
     object-position: 40% center;
     height: 514px;
@@ -43,6 +43,7 @@
       font-size: 3.125rem;
       line-height: 1;
       width: 510px;
+      text-shadow: 0px 0px 15px #000000;
   }
 
   .counters {
@@ -50,7 +51,7 @@
       display: flex;
       height: 228px;
       width: 182px;
-      background: url(../vesta/img/counter_bg.png) no-repeat left top;
+      background: url(../img/counter_bg.png) no-repeat left top;
       background-size: cover;
       color: #fff;
       padding-top: 20px;
@@ -63,7 +64,7 @@
   }
 
   .counters:hover {
-      box-shadow: inset 0px 0px 400px 110px #ad1114a4, 0px 0px 15px 8px #ad1114a4;;
+      box-shadow: inset 0px 0px 400px 110px #ad1114a4, 0px 0px 15px 8px #ad1114a4;
   }
 
   .counters .title {
@@ -72,6 +73,7 @@
       font-size: 12pt;
       line-height: 1;
       width: 100px;
+      text-shadow: 0px 0px 15px #000000;
   }
 
   .counters .img {
@@ -92,7 +94,7 @@
       display: flex;
       height: 228px;
       width: 182px;
-      background: url(../vesta/img/payment_bg.png) no-repeat left top;
+      background: url(../img/payment_bg.png) no-repeat left top;
       background-size: cover;
       color: #fff;
       padding-top: 20px;
@@ -113,6 +115,7 @@
       font-size: 12pt;
       line-height: 1;
       width: 100px;
+      text-shadow: 0px 0px 15px #000000;
   }
 
   .payment .img {
@@ -133,7 +136,7 @@
       display: flex;
       height: 228px;
       width: 182px;
-      background: url(../vesta/img/request_bg.png) no-repeat left top;
+      background: url(../img/request_bg.png) no-repeat left top;
       background-size: cover;
       color: #fff;
       padding-top: 20px;
@@ -155,6 +158,7 @@
       font-size: 12pt;
       line-height: 1;
       width: 100px;
+      text-shadow: 0px 0px 15px #000000;
   }
 
   .request img {
@@ -171,7 +175,6 @@
   }
 
   .contacts {
-      font-family: PT Sans, 'Trebuchet MS', Tahoma, Verdana, sans-serif;
       position: relative;
       display: block;
       height: 228px;
@@ -190,6 +193,10 @@
 
   .contacts a {
       color: #505050;
+  }
+
+  .contacts-text {
+    font-size: 7.5pt;
   }
 
   .parent {
@@ -213,35 +220,35 @@
   <div class="main">
   <div class="parent">
     <div class="div1">
-        <div class="hero_main"><div class="title">ВЕРХНЕВОЛЖСКАЯ УПРАВЛЯЮЩАЯ КОМПАНИЯ</div></div>
+        <div class="hero_main"><div class="title">КОТЛАССКАЯ УПРАВЛЯЮЩАЯ КОМПАНИЯ</div></div>
     </div>
     <div class="div2">
         <div class="counters">
             <div class="title">ПЕРЕДАТЬ ПОКАЗАНИЯ СЧЁТЧИКОВ</div>
-            <img class="img" src="/vesta/img/counter_main.png" alt="" />
+            <img class="img" src="/img/counter_main.png" alt="" />
         </div>
     </div>
     <div class="div3">
         <div class="payment">
             <div class="title">ОПЛАТИТЬ УСЛУГИ ЖКХ</div>
-            <img class="img" src="/vesta/img/payment_main.png" alt="" />
+            <img class="img" src="/img/payment_main.png" alt="" />
         </div>
     </div>
     <div class="div4">
         <div class="request">
             <div class="title">ОСТАВИТЬ ЗАЯВКУ</div>
-            <img class="img" src="/vesta/img/request_main.png" alt="" />
+            <img class="img" src="/img/request_main.png" alt="" />
         </div>
     </div>
     <div class="div5">
         <div class="contacts">
-            <p style="color: #961518;"><strong>ПАСПОРТНЫЙ СТОЛ</strong><br>
+            <p class="contacts-text" style="color: #961518;"><strong>ПАСПОРТНЫЙ СТОЛ</strong><br>
             <a href="tel:8%20(4852)%2028-05-02"><strong>8 (4852) 28-05-02</strong></a><br />
             &nbsp;</p>
-            <p style="color: #961518;"><strong>БУХГАЛТЕРИЯ (ПО ПЛАТЕЖАМ)</strong><br />
+            <p class="contacts-text" style="color: #961518;"><strong>БУХГАЛТЕРИЯ (ПО ПЛАТЕЖАМ)</strong><br />
             <a href="tel:8%20(4852)%2059-43-20"><strong>8 (4852) 59-43-20</strong></a><br />
             &nbsp;</p>
-            <p style="color: #961518;"><strong>АВАРИЙНО-РЕМОНТНАЯ СЛУЖБА (КРУГЛОСУТОЧНО)</strong><br />
+            <p class="contacts-text" style="color: #961518;"><strong>АВАРИЙНО-РЕМОНТНАЯ СЛУЖБА (КРУГЛОСУТОЧНО)</strong><br />
             <a href="tel:8%20(4852)%2059-43-10"><strong>8 (4852) 59-43-10</strong></a><br />
             <strong><a href="tel:8%20(905)%20137-59-69">8 (905) 137-59-69</a></strong><br />
             <br />

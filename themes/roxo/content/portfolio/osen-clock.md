@@ -1,10 +1,11 @@
 ---
-title: "OSEN CLOCK"
+title: "В Ярославле начался сезон ремонта дорог"
 date: 2019-12-23T15:56:43+06:00
 type: portfolio
-image: "images/projects/project-thumb-two.jpg"
-category: ["PRODUCT DESIGN"]
+image: "images/projects/dd58983cfbb9a9e600e855d0ca70b0c5.jpg"
+category: ["17 АПРЕЛЯ 2020"]
 project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
+previewtext: "Сезон ремонта дорог открыт. Накануне подрядчики вышли на улицы Ярославля. Первым стал участок Ленинградского проспекта..."
 ---
 
 The “Seamless Watch” watch has all the features that users expect in a digital watch, and some unusual features.

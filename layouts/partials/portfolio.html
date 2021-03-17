@@ -1,11 +1,48 @@
 {{ with .Site.Params.portfolio }}
   {{ if .enable }}
+  <style>
+    .site-project-item-content, .site-blog-post-content {
+      position: unset;
+      margin-top: -90px;
+      padding: 120px 25px 45px 25px;
+      background: #F7F7F7;
+    }
+    .site-project-item-thumb img, .site-blog-post-thumb img {
+      width: 65%;
+      margin-left: 25px;
+      height: 150px;
+      object-fit: cover;
+    }
+    h3 {
+      font-size: 11pt;
+      padding-bottom: 15px;
+    }
+    .section-title h2:hover {
+      color: #AD1113;
+    }
+    .date, .read-more, .previewtext {
+      font-family: montserrat,sans-serif;
+      font-size: 11pt;
+      color: #000000;
+    }
+    .site-project-item:hover, .site-blog-post:hover {
+      box-shadow: unset;
+    }
+    .project-thumb {
+      transition: 0.25s ease-out;
+    }
+    .project-thumb:hover {
+      box-shadow: inset 0px 0px 400px 110px #ad1114a4, 0px 0px 15px 8px #ad1114a4;
+      filter: opacity(0.6) drop-shadow(0px 0px 0px #7e0000);
+    }
+  </style>
+
   <section class="site-project" id="project">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="section-title">
-            <h2>{{ .title }}</h2>
+            <a href="portfolio" class="site-project-cta"><h2>{{ .title }} <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a>
             <p>{{ .subtitle }}</p>
           </div>
         </div>
@@ -13,19 +50,20 @@
         <div class="col-lg-4 col-md-10 mx-auto">
           <div class="site-project-item">
             <div class="site-project-item-thumb">
-              <img src="{{ .Params.Image | absURL }}" alt="project-thumb">
+              <a href="{{ .Permalink }}" style="display: block;">
+              <img class="project-thumb" src="{{ .Params.Image | absURL }}" alt="project-thumb"/>
+            </a>
             </div>
             <div class="site-project-item-content">
-              <span>{{ delimit .Params.category ", " }}</span>
-              <h3>{{ .Title }}</h3>
-              <a href="{{ .Permalink }}" class="read-more">view project</a>
+              <span class="date">{{ $month_names := slice "Января" "Февраля" "Марта" "Апреля" "Мая" "Июня" "Июля" "Августа" "Сентября" "Октября" "Ноября" "Декабря" }} {{ $month := sub .Date.Month 1 }}
+                {{ .Date.Day }} {{ index $month_names $month }} {{ .Date.Year }}</span>
+              <a href="{{ .Permalink }}" style="display: block;"><h3>{{ .Title }}</h3></a>
+              <p class="previewtext">{{ .Params.previewtext }}</p>
+              <!--<a href="{{ .Permalink }}" class="read-more">Читать далее...</a>-->
             </div>
           </div>
         </div>
         {{ end }}
-        <div class="col-12 text-center text-lg-left">
-          <a href="portfolio" class="site-project-cta">MORE WORKS</a>
-        </div>
       </div>
     </div>
   </section>

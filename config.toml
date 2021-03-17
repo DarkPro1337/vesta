@@ -1,5 +1,5 @@
-baseURL       = "https://darkpro1337.github.io/vesta/"
-languageCode  = "ru-ru"
+baseURL       = "http://vesta.1gb.ru/"
+languageCode  = "ru"
 title         = "ВЕСТА"
 theme         = "roxo"
 summarylength = 25
@@ -17,7 +17,7 @@ publishDir = "docs"
     url     = "about"
     weight  = 2
   [[menu.nav]]
-    name    = "Услуги"
+    name    = "Новости"
     url     = "portfolio"
     weight  = 3
   [[menu.nav]]
@@ -32,7 +32,9 @@ publishDir = "docs"
 # Site Params
 [params]
   logo = "images/logo.png"
-  dateFormat = "26 FEB 1994"
+  dateFormat = "2 January 2006"
+  dateFormatFull = "02/01/2006"
+  dateFormatTime = "2 Jan 2006 15:04"
   # Meta data
   description = "Roxo Hugo themes | Design Agency Template by StaticMania"
   author = "StaticMania"

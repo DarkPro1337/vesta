@@ -1,14 +1,11 @@
 enable : true
-heading : "THE PROOF IS IN THE PUDDING!"
+heading : "«КОТЛАССКАЯ УПРАВЛЯЮЩАЯ КОМПАНИЯ» — УСПЕШНАЯ ЯРОСЛАВКАЯ КОМПАНИЯ В СФЕРЕ ЖКХ, РАБОТАЮЩАЯ С 2008 ГОДА"
 counter_item: 
-  - title: "Happy Clients"
-    number: "250"
+  - title: "Обслуживание и ремонт жилищного фонда и инженерных систем"
+    number: ""
 
-  - title: "Projects Completed"
-    number: "100"
+  - title: "Услуги сантехника"
+    number: ""
 
-  - title: "Cups of coffee"
-    number: "350"
-
-  - title: "Telephone Talks"
-    number: "775"
+  - title: "Услуги электрика"
+    number: ""
