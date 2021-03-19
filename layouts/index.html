@@ -1,5 +1,10 @@
 {{ define "main" }}
-
+<!-- Фикс белых областей слева на мобилках -->
+<style>
+    html,body{
+        overflow-x: hidden;
+    }
+</style>
 {{ partial "hero.html" . }}
 
 {{ partial "portfolio.html" . }}

@@ -78,41 +78,41 @@ publishDir = "docs"
   [params.footer]
     # Footer Contact Info
     [params.footer.contactInfo]
-      title   = "Contact Info"
-      address = "713 Elmwood St.<br>Prior Lake, MN 55372"
-      phone   = "409-896-1444"
-      email   = "info@roxo.co"
+      title   = "Контакты"
+      address = "165302, Архангельская область, Котлас, улица Володарского, 106"
+      phone   = "+78183752873"
+      email   = "Upravdompluskotlas@yandex.ru"
       # Footer Sitemap
       [params.footer.sitemap]
-        title   = "Sitemap"
+        title   = "Карта сайта"
         [[params.footer.sitemap.link]]
-          name = "About Company"
+          name = "О нас"
           url  = "about"
         [[params.footer.sitemap.link]]
-          name = "Projects"
+          name = "Новости"
           url  = "portfolio"
         [[params.footer.sitemap.link]]
-          name = "Blog"
+          name = "Контакты"
           url  = "blog"
         [[params.footer.sitemap.link]]
-          name = "Contact"
+          name = "Связаться с нами"
           url  = "contact"
       # Footer Social Media
       [params.footer.social]
-        title   = "Social Media"
+        title   = "Социальные сети"
         [[params.footer.social.link]]
-          name = "Medium"
+          name = "VK"
           url  = "#"
         [[params.footer.social.link]]
-          name = "Behance"
+          name = "Telegram"
           url  = "#"
         [[params.footer.social.link]]
-          name = "Dribbble"
+          name = "YouTube"
           url  = "#"
         [[params.footer.social.link]]
           name = "Instagram"
           url  = "#"
       # Footer Service
       [params.footer.service]
-        title       = "We help brands:"
-        description = "develop design solutions<br>produce valuable cultural content<br>create fresh brand experience"
+        title       = ""
+        description = ""

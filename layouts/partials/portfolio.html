@@ -35,6 +35,9 @@
       box-shadow: inset 0px 0px 400px 110px #ad1114a4, 0px 0px 15px 8px #ad1114a4;
       filter: opacity(0.6) drop-shadow(0px 0px 0px #7e0000);
     }
+    .site-project-cta h2 {
+      font-size: 18pt;
+    }
   </style>
 
   <section class="site-project" id="project">
@@ -58,7 +61,7 @@
               <span class="date">{{ $month_names := slice "Января" "Февраля" "Марта" "Апреля" "Мая" "Июня" "Июля" "Августа" "Сентября" "Октября" "Ноября" "Декабря" }} {{ $month := sub .Date.Month 1 }}
                 {{ .Date.Day }} {{ index $month_names $month }} {{ .Date.Year }}</span>
               <a href="{{ .Permalink }}" style="display: block;"><h3>{{ .Title }}</h3></a>
-              <p class="previewtext">{{ .Params.previewtext }}</p>
+              <p class="previewtext">{{ .Summary }}</p>
               <!--<a href="{{ .Permalink }}" class="read-more">Читать далее...</a>-->
             </div>
           </div>

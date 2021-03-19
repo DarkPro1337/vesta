@@ -3,8 +3,8 @@
   <style>
     .site-testimonial-item {
     background: #fff;
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 25px;
+    margin-bottom: 25px;
     transition: all .3s ease-in;
     box-shadow: inset 0 50px 0 #fff;
     min-height: 0;
@@ -24,7 +24,9 @@
       margin-right:0;
       margin-bottom: 20px;
   }
-
+  .site-testimonial-item-header .person p {
+    font-family: montserrat,sans-serif;
+  }
   </style>
   <section class="site-testimonial">
     <div class="container">
@@ -50,10 +52,10 @@
                 <h5>{{ .name }}</h5>
                 <p>{{ .company_position }}</p>
               </div>
-            </div>
+            </div><!--
             <p class="site-testimonial-item-body">
               {{ .quote }}
-            </p>
+            </p>-->
           </div>
         </div>
         {{ end }}

@@ -4,26 +4,77 @@ date: 2019-12-23T15:58:10+06:00
 type: portfolio
 image: "images/projects/746f927c6cf4327dba6341f06a0d96b4.jpg"
 category: ["17 АПРЕЛЯ 2020"]
-previewtext: "Начался ремонт первой дворовой территории из числа запланированных к благоустройству в 2020 году по губернаторскому проекту «Решаем вместе!». В проект попали 22 дворовые территории и 2 общественные..."
 project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
 ---
 
-The “Seamless Watch” watch has all the features that users expect in a digital watch, and some unusual features.
+Начался ремонт первой дворовой территории из числа запланированных к благоустройству в 2020 году по губернаторскому проекту «Решаем вместе!». В проект попали 22 дворовые территории и 2 общественные.
+
+Первый двор, который будет отремонтирован, находится в Кировском районе по адресу: улица Большая Октябрьская, 124а. Во дворе заменят бордюрный камень, отремонтируют асфальтовое покрытие, две дорожки и входы в подъезды, заменят освещение.
+
+В перечень объектов планируемых к благоустройству по губернаторскому проекту «Решаем вместе!» в 2020 году вошли:
+
+Дзержинский район
 
 
-The watch has the following features:
+— ул. Туманова, 14, 16;
 
-Time and date displayed on the screen. Current time is in large numbers, date is in small numbers above it.
+— 2-й Норский переулок, 9;
 
-Light: Pressing the light button on the side of the watch activates a light while the button is pressed. Pressing and holding that button for 3 seconds turns on the light and keeps it on, until the button is held again for 3 seconds or up to 2 hours. After 2 hours, it will automatically turn off.
+— ул. Громова, 46, 46 корп.2, 46 корп.3, 48.
 
-Alarm. A daily alarm may be set for a given time. The alarm may be enabled or disabled. When the alarm is enabled and the alarm time is reached, the watch will beep fast for 5 seconds, then slowly for 30 seconds, then fast for another 5 seconds. Pressing any button stops the alarm sound (in addition to performing its normal function).
-
-Timer. Timer mode shows a count-up timer that starts at 00:00. When the timer is started, it counts up. Pressing the start/stop button will pause the timer, pressing it again continues counting up. Pressing and holding the button for 3 seconds resets the timer to 00:00 and stops counting.
-
-Mystery answer. After entering this mode, the screen initially displays “ask now”. The user may ask a yes-or-no question aloud and press the start/stop button, this will display a randomly selected answer that is one of the following: “yeah”, “yeah right”, “no”, “no doubt”, “keep trying”, “keep dreaming”. Whenever the display has more than one word, only one word is displayed for 2 seconds, then the other word is displayed for 2 seconds, alternately. The answer is displayed until the user leaves this mode, or he/she presses start/stop again for a new answer. 
+Заволжский район
 
 
-Note: these strings are for the English version of the watch, we will need to use completely different strings in other countries without reprogramming the logic of the watch.
+— пр. Машиностроителей, 46;
 
-The user may cycle among all modes (date/time, timer, mystery answer) by pressing the mode button.
+— ул. Сахарова, 13, 15;
+
+— ул. Лебедева, 3;
+
+— ул. Космонавтов, 6;
+
+— пр. Авиаторов, 90.
+
+Кировский район
+
+
+— ул. Свободы, 52/39, ул. Угличская, 1/51;
+
+— пр. Толбухина, 31, ул. Рыбинская, 32/29;
+
+— ул. Б.Октябрьская, 124а.
+
+
+Красноперекопский район
+
+
+— ул. Рыкачева, 2, Курчатова, 18;
+
+— ул. Маланова, 12 корп.2;
+
+— ул. Рыкачева, 16.
+
+Ленинский район
+
+
+— ул. Автозаводская, д. 59, 59а, 59б, 61 а, 61б,
+
+— ул. К.Либкнехта, 50а К.Либнехта 52а,
+
+— пр. Ленина, 32;
+
+— ул. Автозаводская, 89,91.
+
+
+Фрунзенский район
+
+
+— ул. Светлая, 34;
+
+— пр. Подвойского, 1;
+
+— ул. Корабельная, 14,16,18;
+
+— ул. Индустриальная, 35, 37;
+
+— ул. Гоголя, 17, 17а, 19.
