@@ -1,5 +1,5 @@
 {{ define "main" }}
-
+<!--
 <section class="site-about-header">
   <div class="container">
     <div class="row">
@@ -40,12 +40,196 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
+<style>
+  .site-project-header {
+    background: #AD1113 url('{{ "img/bg-page-header.png" | absURL }}') 50% 50% no-repeat;
+    padding: 170px 0 75px;
+  }
+  .site-project-single-section {
+    padding: 50px 0 100px;
+  }
+  .header-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  .header-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .site-blog.details {
+      padding: 50px 0 80px;
+  }
+  .site-project-header-content h2 {
+    font-size: 40px;
+}
+  </style>
+  
+  <section class="site-project-header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <div class="site-project-header-content">
+          <p style="color: #fff;">
+            <a class="header-link" href="/">Главная</a>  /
+          </p>
+          <h2 style="color: #fff;">
+            О нас
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="site-blog details">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <article class="site-blog-details">
+            <!--<img class="feature-image" src="{{ .Params.feature_image | absURL }}" alt="blog-feature-image">-->
+            <h3>Уважаемые жильцы! Мы рады приветствовать вас на официальном сайте ООО «ВЕСТА»!</h3>
+            <img src="/img/admin.jpg" alt="Чеснокова Ирина Сергеевна" style='float: left; margin-right: 24px; width: 210px;' title="Чеснокова Ирина Сергеевна">
+            <p>ВЕСТА осуществляет свою деятельность в городе Котлас с 2015 года. Под нашим управлением находится 34 дома, общей площадью 400 квадратных метров. Директором компании является - Чеснокова Ирина Сергеевна.</p>
+            <p>Здесь вы можете получить самую свежую и достоверную информацию о деятельности управляющей компании. Также через специальные формы на сайте мы готовы ответить на все Ваши обращения. Только жители могут полностью контролировать качество и объём работ по содержанию и обслуживанию своего дома. На наш взгляд, взаимодействие и взаимопонимание - основы качественной работы. Надеюсь на плодотворное и долгосрочное сотрудничество.</p>
+            <p>Опыт компании охватывает такие области жилищно-коммунального хозяйства, как управление многоквартирными домами, управление эксплуатацией коммерческих зданий, управление энергетическими ресурсами, управление проектами реновации теплового и электроэнергетического хозяйства. </p>
+            <br><h4 align=center style="background-color: #F9F8F8; padding: 25px;">Главной целью нашей компании является профессиональное предоставление качественных жилищно-коммунальных услуг жителям.</h4><br>
+            <h5 align=center>Миссия и видение</h5>
+            <p>Миссия – создание гармоничной жизненной и рабочей обстановки в процессе предоставления комплексных новаторских услуг в сфере ЖКХ.</p>
+            <p>Видение – быть лидерами на рынках в которых работаем. Предоставлять услуги по управлению хозяйством зданий, которые оценивались бы, как лучшие на рынке, и являлись стандартом качества для наших клиентов.</p>
+            
+            <table class="table">
+              <thead>
+                <tr>
+                  <td colspan="2"><h4 align=center>Наши реквизиты</h4></td>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th>
+                </th>
+                <th>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                   Наименование организации
+                </td>
+                <td>
+                  ООО "ВЕСТА"<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   Полное наименование
+                </td>
+                <td>
+                  ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ВЕСТА"<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   ИНН
+                </td>
+                <td>
+                  2904021142<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   КПП
+                </td>
+                <td>
+                   760201001<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   ОГРН
+                </td>
+                <td>
+                  1092904000342<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   Юридический адрес
+                </td>
+                <td>
+                  165300,&nbsp;Архангельская область,&nbsp;город Котлас,&nbsp;улица Володарского, 106<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   Почтовый адрес&nbsp; &nbsp;
+                </td>
+                <td>
+                  165300,&nbsp;Архангельская область,&nbsp;город Котлас,&nbsp;улица Кузнецова, 16
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   ФИО. руководителя
+                </td>
+                <td>
+                  Чеснокова Ирина Сергеевна
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   Тип организации
+                </td>
+                <td>
+                   Управляющая компания
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   Дата регистрации
+                </td>
+                <td>
+                  09.04.2015<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   Наименование органа, принявшего решение о регистрации
+                </td>
+                <td>
+                  Государственная жилищная инспекция Архангельской области
+                  (Архгосжилинспекция)<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   Телефон
+                </td>
+                <td>
+                  +7(81837)52873<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                   Е-mail
+                </td>
+                <td>
+             <a href="mailto:Upravdompluskotlas@yandex.ru">Upravdompluskotlas@yandex.ru</a><br>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          <p align=center><a href="/license">Лицензия на осуществлении деятельности</a></p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--
 {{ partial "clients.html" . }}
 
 {{ partial "team.html" . }}
 
-{{ partial "call-to-action.html" . }}
+{{ partial "call-to-action.html" . }}-->
 
 {{ end }}

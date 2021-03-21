@@ -217,6 +217,11 @@
       .div5 { grid-area: 2 / 3 / 3 / 4; }
       .div6 { grid-area: 1 / 4 / 3 / 6; }
   
+  .hero-link, .hero-link:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
   @media only screen and (max-width: 1267px) {
     .div1 { grid-area: 1 / 1 / 2 / 5; }
     .div2 { grid-area: 2 / 1 / 3 / 2; }
@@ -227,9 +232,18 @@
     .hero_main {
       height: 514px;
       width: 100vw;
+      margin-bottom: 12px;
     }
     .main {
       width: 100vw;
+    }
+    .counters, .payment, .request, .contacts {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+    .parent {
+      justify-items: center;
+      align-items: center;
     }
   }
 
@@ -257,6 +271,9 @@
       font-size: 7.7vw;
       width: 100vw;
     }
+    .parent {
+    justify-items: unset;
+    }
   }
   </style>
   
@@ -266,22 +283,22 @@
         <div class="hero_main"><div class="title">КОТЛАССКАЯ УПРАВЛЯЮЩАЯ КОМПАНИЯ</div></div>
     </div>
     <div class="div2">
-        <div class="counters">
+        <a class="hero-link" href="counters"><div class="counters">
             <div class="title">ПЕРЕДАТЬ ПОКАЗАНИЯ СЧЁТЧИКОВ</div>
             <img class="img" src="/img/counter_main.png" alt="" />
-        </div>
+        </div></a>
     </div>
     <div class="div3">
-        <div class="payment">
+        <a class="hero-link" href="payment"><div class="payment">
             <div class="title">ОПЛАТИТЬ УСЛУГИ ЖКХ</div>
             <img class="img" src="/img/payment_main.png" alt="" />
-        </div>
+        </div></a>
     </div>
     <div class="div4">
-        <div class="request">
+        <a class="hero-link" href="request"><div class="request">
             <div class="title">ОСТАВИТЬ ЗАЯВКУ</div>
             <img class="img" src="/img/request_main.png" alt="" />
-        </div>
+        </div></a>
     </div>
     <div class="div5">
         <div class="contacts">
@@ -295,7 +312,7 @@
             <a href="tel:8%20(4852)%2059-43-10"><strong>8 (4852) 59-43-10</strong></a><br />
             <strong><a href="tel:8%20(905)%20137-59-69">8 (905) 137-59-69</a></strong><br />
             <br />
-            <a href="https://ukvvolga.ru/contacts/" style="color: #000;"><strong>ДРУГИЕ КОНТАКТЫ И РЕЖИМ РАБОТЫ &raquo;</strong></a></p>
+            <a href="contact" style="color: #000;"><strong>ДРУГИЕ КОНТАКТЫ И РЕЖИМ РАБОТЫ &raquo;</strong></a></p>
         </div>
     </div>
     <div class="div6"> </div>

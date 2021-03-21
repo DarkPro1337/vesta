@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   
-  <meta name="author" content="StaticMania">
+  <meta name="author" content="ООО ВЕСТА">
   
   <meta name="generator" content="Hugo 0.81.0" />
 
@@ -54,7 +54,7 @@
          
           
           <li class="nav-item">
-            <a class="nav-link" href="http://vesta.1gb.ru/portfolio"
+            <a class="nav-link" href="http://vesta.1gb.ru/blog"
               >Новости</a
             >
           </li>
@@ -62,8 +62,16 @@
          
           
           <li class="nav-item">
-            <a class="nav-link" href="http://vesta.1gb.ru/blog"
-              >Контакты</a
+            <a class="nav-link" href="http://vesta.1gb.ru/portfolio"
+              >Услуги</a
+            >
+          </li>
+           
+         
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://vesta.1gb.ru/our_houses"
+              >Наши дома</a
             >
           </li>
            
@@ -88,6 +96,7 @@
   </div>
 </nav>
 <main>
+
 <style>
     html,body{
         overflow-x: hidden;
@@ -312,6 +321,11 @@
       .div5 { grid-area: 2 / 3 / 3 / 4; }
       .div6 { grid-area: 1 / 4 / 3 / 6; }
   
+  .hero-link, .hero-link:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
   @media only screen and (max-width: 1267px) {
     .div1 { grid-area: 1 / 1 / 2 / 5; }
     .div2 { grid-area: 2 / 1 / 3 / 2; }
@@ -322,9 +336,18 @@
     .hero_main {
       height: 514px;
       width: 100vw;
+      margin-bottom: 12px;
     }
     .main {
       width: 100vw;
+    }
+    .counters, .payment, .request, .contacts {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+    .parent {
+      justify-items: center;
+      align-items: center;
     }
   }
 
@@ -352,6 +375,9 @@
       font-size: 7.7vw;
       width: 100vw;
     }
+    .parent {
+    justify-items: unset;
+    }
   }
   </style>
   
@@ -361,22 +387,22 @@
         <div class="hero_main"><div class="title">КОТЛАССКАЯ УПРАВЛЯЮЩАЯ КОМПАНИЯ</div></div>
     </div>
     <div class="div2">
-        <div class="counters">
+        <a class="hero-link" href="counters"><div class="counters">
             <div class="title">ПЕРЕДАТЬ ПОКАЗАНИЯ СЧЁТЧИКОВ</div>
             <img class="img" src="/img/counter_main.png" alt="" />
-        </div>
+        </div></a>
     </div>
     <div class="div3">
-        <div class="payment">
+        <a class="hero-link" href="payment"><div class="payment">
             <div class="title">ОПЛАТИТЬ УСЛУГИ ЖКХ</div>
             <img class="img" src="/img/payment_main.png" alt="" />
-        </div>
+        </div></a>
     </div>
     <div class="div4">
-        <div class="request">
+        <a class="hero-link" href="request"><div class="request">
             <div class="title">ОСТАВИТЬ ЗАЯВКУ</div>
             <img class="img" src="/img/request_main.png" alt="" />
-        </div>
+        </div></a>
     </div>
     <div class="div5">
         <div class="contacts">
@@ -390,7 +416,7 @@
             <a href="tel:8%20(4852)%2059-43-10"><strong>8 (4852) 59-43-10</strong></a><br />
             <strong><a href="tel:8%20(905)%20137-59-69">8 (905) 137-59-69</a></strong><br />
             <br />
-            <a href="https://ukvvolga.ru/contacts/" style="color: #000;"><strong>ДРУГИЕ КОНТАКТЫ И РЕЖИМ РАБОТЫ &raquo;</strong></a></p>
+            <a href="contact" style="color: #000;"><strong>ДРУГИЕ КОНТАКТЫ И РЕЖИМ РАБОТЫ &raquo;</strong></a></p>
         </div>
     </div>
     <div class="div6"> </div>
@@ -441,6 +467,12 @@
     .site-project-cta h2 {
       font-size: 18pt;
     }
+    .site-project, .site-blog {
+      padding: 20px 0;
+    }
+    .site-project-item-content a.read-more, .site-blog-post-content a.read-more {
+      bottom: 20px;
+    }
   </style>
 
   <section class="site-project" id="project">
@@ -448,7 +480,7 @@
       <div class="row">
         <div class="col-12">
           <div class="section-title">
-            <a href="portfolio" class="site-project-cta"><h2>НОВОСТИ И ОБЪЯВЛЕНИЯ <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a>
+            <a href="blog" class="site-project-cta"><h2>НОВОСТИ И ОБЪЯВЛЕНИЯ <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a>
             <p></p>
           </div>
         </div>
@@ -456,16 +488,16 @@
         <div class="col-lg-4 col-md-10 mx-auto">
           <div class="site-project-item">
             <div class="site-project-item-thumb">
-              <a href="http://vesta.1gb.ru/portfolio/kio-tape-2/" style="display: block;">
-              <img class="project-thumb" src="http://vesta.1gb.ru/images/projects/41cac8aea75efadf163e4253410f4e62.jpg" alt="project-thumb"/>
+              <a href="http://vesta.1gb.ru/blog/prazdnovanie-velikoy-pobedy-perenesut-no-ne-otmenyat/" style="display: block;">
+              <img class="project-thumb" src="http://vesta.1gb.ru/img/news1.jpg" alt="project-thumb"/>
             </a>
             </div>
             <div class="site-project-item-content">
               <span class="date"> 
-                23 Декабря 2019</span>
-              <a href="http://vesta.1gb.ru/portfolio/kio-tape-2/" style="display: block;"><h3>Празднование Великой Победы перенесут, но не отменят</h3></a>
+                17 Апреля 2020</span>
+              <a href="http://vesta.1gb.ru/blog/prazdnovanie-velikoy-pobedy-perenesut-no-ne-otmenyat/" style="display: block;"><h3>Празднование Великой Победы перенесут, но не отменят</h3></a>
               <p class="previewtext">Девятого мая парад Победы не состоится. Об этом заявил Владимир Путин на заседании Совета безопасности в Москве. Глава государства подчеркнул, что празднование перенесут, но ни в коем случае не отменят.</p>
-              
+              <a href="http://vesta.1gb.ru/blog/prazdnovanie-velikoy-pobedy-perenesut-no-ne-otmenyat/" class="read-more">Читать далее...</a>
             </div>
           </div>
         </div>
@@ -473,16 +505,16 @@
         <div class="col-lg-4 col-md-10 mx-auto">
           <div class="site-project-item">
             <div class="site-project-item-thumb">
-              <a href="http://vesta.1gb.ru/portfolio/use-less-brand/" style="display: block;">
-              <img class="project-thumb" src="http://vesta.1gb.ru/images/projects/746f927c6cf4327dba6341f06a0d96b4.jpg" alt="project-thumb"/>
+              <a href="http://vesta.1gb.ru/blog/v-kotlase-nachali-blagoustroystvo-dvorov/" style="display: block;">
+              <img class="project-thumb" src="http://vesta.1gb.ru/img/news2_1.jpg" alt="project-thumb"/>
             </a>
             </div>
             <div class="site-project-item-content">
               <span class="date"> 
-                23 Декабря 2019</span>
-              <a href="http://vesta.1gb.ru/portfolio/use-less-brand/" style="display: block;"><h3>В Ярославле начали благоустройство дворов</h3></a>
+                17 Апреля 2020</span>
+              <a href="http://vesta.1gb.ru/blog/v-kotlase-nachali-blagoustroystvo-dvorov/" style="display: block;"><h3>В Котласе начали благоустройство дворов</h3></a>
               <p class="previewtext">Начался ремонт первой дворовой территории из числа запланированных к благоустройству в 2020 году по губернаторскому проекту «Решаем вместе!». В проект попали 22 дворовые территории и 2 общественные.</p>
-              
+              <a href="http://vesta.1gb.ru/blog/v-kotlase-nachali-blagoustroystvo-dvorov/" class="read-more">Читать далее...</a>
             </div>
           </div>
         </div>
@@ -490,17 +522,16 @@
         <div class="col-lg-4 col-md-10 mx-auto">
           <div class="site-project-item">
             <div class="site-project-item-thumb">
-              <a href="http://vesta.1gb.ru/portfolio/osen-clock/" style="display: block;">
-              <img class="project-thumb" src="http://vesta.1gb.ru/images/projects/dd58983cfbb9a9e600e855d0ca70b0c5.jpg" alt="project-thumb"/>
+              <a href="http://vesta.1gb.ru/blog/v-kotlase-nachalsya-sezon-remonta-dorog/" style="display: block;">
+              <img class="project-thumb" src="http://vesta.1gb.ru/img/news3.jpg" alt="project-thumb"/>
             </a>
             </div>
             <div class="site-project-item-content">
               <span class="date"> 
-                23 Декабря 2019</span>
-              <a href="http://vesta.1gb.ru/portfolio/osen-clock/" style="display: block;"><h3>В Ярославле начался сезон ремонта дорог</h3></a>
-              <p class="previewtext">The “Seamless Watch” watch has all the features that users expect in a digital watch, and some unusual features.
-The watch has the following features:</p>
-              
+                17 Апреля 2020</span>
+              <a href="http://vesta.1gb.ru/blog/v-kotlase-nachalsya-sezon-remonta-dorog/" style="display: block;"><h3>В Котласе начался сезон ремонта дорог</h3></a>
+              <p class="previewtext">Сезон ремонта дорог открыт. Накануне подрядчики вышли на улицы Котласа. Первым стал участок Ленинградского проспекта от улицы Строителей до границы города. На проезжей части планируется заменить верхний слой асфальта.</p>
+              <a href="http://vesta.1gb.ru/blog/v-kotlase-nachalsya-sezon-remonta-dorog/" class="read-more">Читать далее...</a>
             </div>
           </div>
         </div>
@@ -529,37 +560,44 @@ The watch has the following features:</p>
     display: block;
     padding-bottom: 12px;
   }
+  @media only screen and (max-width: 1005px) {
+    .section-title h2, .btn, .site-counter-item-title {
+      font-size: 12pt;
+    }
+    .site-counter-item {
+      text-align: left;
+    }
+  }
   </style>
   <section class="site-counter" id="counter">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="section-title">
-            <h2 class="text-white">«КОТЛАССКАЯ УПРАВЛЯЮЩАЯ КОМПАНИЯ» — УСПЕШНАЯ КОТЛАССКАЯ КОМПАНИЯ В СФЕРЕ ЖКХ, РАБОТАЮЩАЯ С 2008 ГОДА</h2>
-            <a href="/about/" class="btn btn-light btn-more">Подробнее</a>
+            <center><h2 class="text-white">«КОТЛАССКАЯ УПРАВЛЯЮЩАЯ КОМПАНИЯ» — УСПЕШНАЯ КОТЛАССКАЯ КОМПАНИЯ В СФЕРЕ ЖКХ, РАБОТАЮЩАЯ С 2015 ГОДА</h2></center>
           </div>
         </div>
         
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-4 col-md-4">
           <div class="site-counter-item">
-            <img class="site-counter-item-image" src="/img/icon_1.png" alt="">
-            <span class="site-counter-item-title">Обслуживание и ремонт жилищного фонда и инженерных систем</span>
+            <center><img class="site-counter-item-image" src="/img/icon_2.png" alt=""></center>
+            <center><span class="site-counter-item-title">Услуги сантехника</span></center>
             
           </div>
         </div>
         
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-4 col-md-4">
           <div class="site-counter-item">
-            <img class="site-counter-item-image" src="/img/icon_2.png" alt="">
-            <span class="site-counter-item-title">Услуги сантехника</span>
+            <center><img class="site-counter-item-image" src="/img/icon_1.png" alt=""></center>
+            <center><span class="site-counter-item-title">Обслуживание и ремонт жилищного фонда и инженерных систем</span></center>
             
           </div>
         </div>
         
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-4 col-md-4">
           <div class="site-counter-item">
-            <img class="site-counter-item-image" src="/img/icon_3.png" alt="">
-            <span class="site-counter-item-title">Услуги электрика</span>
+            <center><img class="site-counter-item-image" src="/img/icon_3.png" alt=""></center>
+            <center><span class="site-counter-item-title">Услуги электрика</span></center>
             
           </div>
         </div>
@@ -598,6 +636,9 @@ The watch has the following features:</p>
   }
   .site-testimonial-item-header .person p {
     font-family: montserrat,sans-serif;
+  }
+  .section-title h2 {
+    font-size: 18pt;
   }
   </style>
   <section class="site-testimonial">
@@ -800,7 +841,7 @@ The watch has the following features:</p>
         <div class="site-footer-widget">
           <h5 class="site-footer-widget-title">Контакты</h5>
           <p class="site-footer-widget-description">
-            165302, Архангельская область, Котлас, улица Володарского, 106
+            Архангельская обл, р-н. Котласский, г. Котлас, ул. Кузнецова, д. 16
             <br>
             <a href="tel:&#43;78183752873">&#43;78183752873</a>
             <br>
@@ -817,9 +858,11 @@ The watch has the following features:</p>
             
             <li><a href="http://vesta.1gb.ru/about">О нас</a></li>
             
-            <li><a href="http://vesta.1gb.ru/portfolio">Новости</a></li>
+            <li><a href="http://vesta.1gb.ru/blog">Новости</a></li>
             
-            <li><a href="http://vesta.1gb.ru/blog">Контакты</a></li>
+            <li><a href="http://vesta.1gb.ru/portfolio">Услуги</a></li>
+            
+            <li><a href="http://vesta.1gb.ru/our_houses">Наши дома</a></li>
             
             <li><a href="http://vesta.1gb.ru/contact">Связаться с нами</a></li>
             

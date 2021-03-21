@@ -9,6 +9,53 @@
 .site-project-header {
     padding: 170px 0 75px;
 }
+.service-text {
+  font-size: 11pt;
+  text-align: center;
+}
+.service-icon {
+  color: #00113E;
+  transition: all .3s cubic-bezier(.36,.03,0,.91);
+}
+.service-icon:hover {
+  color: #AD1113;
+}
+.site-project-item-content {
+  padding-bottom: 0px;
+  padding: 30px;
+}
+.site-project-item-content:hover a {
+  color: #AD1113;
+}
+.fa {
+  padding-bottom: 12px;
+}
+.service-link {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.site-project-header {
+    background: #AD1113 url('{{ "img/bg-page-header.png" | absURL }}') 50% 50% no-repeat;
+}
+.header-link {
+  color: #fff;
+  text-decoration: none;
+}
+.header-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.site-project-header-content h1 {
+    font-size: 40px;
+    word-break: break-word;
+}
+html,body{
+    overflow-x: hidden;
+}
 </style>
 
 <section class="site-project-header">
@@ -16,8 +63,11 @@
     <div class="row align-items-center">
       <div class="col-lg-8">
         <div class="site-project-header-content">
+          <p style="color: #fff;">
+            <a class="header-link" href="/">Главная</a>
+          </p>
           <h1 style="color: #fff;">
-            Новости
+            Услуги
           </h1>
         </div>
       </div>
@@ -35,20 +85,16 @@
   <div class="container">
     <div class="row">
       {{ range (.Paginator 4).Pages }}
-      <div class="col-lg-6 col-md-10 mx-auto">
+      <div class="col-lg-3 col-md-10 mx-auto">
         <div class="site-project-item">
-          <div class="site-project-item-thumb">
-            <a href="{{ .Permalink }}"><img src="{{ .Params.Image | absURL }}" alt="project-thumb"></a>
-          </div>
-          <div class="site-project-item-content">
-            <span>{{ $month_names := slice "Января" "Февраля" "Марта" "Апреля" "Мая" "Июня" "Июля" "Августа" "Сентября" "Октября" "Ноября" "Декабря" }} {{ $month := sub .Date.Month 1 }}
-              {{ .Date.Day }} {{ index $month_names $month }} {{ .Date.Year }}</span>
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <div class="site-project-item-content"><a class="service-link" href="{{ .Permalink }}">
+            <center><a class="service-icon" href="{{ .Permalink }}"><i class="{{ .Params.Image }} fa-3x" aria-hidden="true"></i></a></center>
+            <h3 class="service-text"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
             <!--<a href="{{ .Permalink }}" class="read-more">Читать далее...</a>-->
-            <p class="previewtext">{{ .Params.previewtext }}</p>
-          </div>
+          </a></div>
         </div>
       </div>
+      
       {{ end }}
       <div class="col-12">
         <div class="site-project-pagination">
@@ -59,6 +105,6 @@
   </div>
 </section>
 
-{{ partial "call-to-action.html" . }}
+<!--{{ partial "call-to-action.html" . }}-->
 
 {{ end }}

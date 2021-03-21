@@ -15,14 +15,18 @@ publishDir = "docs"
   [[menu.nav]]
     name    = "О нас"
     url     = "about"
-    weight  = 2
+    weight  = 1
   [[menu.nav]]
     name    = "Новости"
+    url     = "blog"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Услуги"
     url     = "portfolio"
     weight  = 3
   [[menu.nav]]
-    name    = "Контакты"
-    url     = "blog"
+    name    = "Наши дома"
+    url     = "our_houses"
     weight  = 4
   [[menu.nav]]
     name    = "Связаться с нами"
@@ -36,8 +40,8 @@ publishDir = "docs"
   dateFormatFull = "02/01/2006"
   dateFormatTime = "2 Jan 2006 15:04"
   # Meta data
-  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
-  author = "StaticMania"
+  description = "Котласская Управляющая Компания"
+  author = "ООО ВЕСТА"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
   # We're using formspree.io for form handling, paste your formspree url below
@@ -79,7 +83,7 @@ publishDir = "docs"
     # Footer Contact Info
     [params.footer.contactInfo]
       title   = "Контакты"
-      address = "165302, Архангельская область, Котлас, улица Володарского, 106"
+      address = "Архангельская обл, р-н. Котласский, г. Котлас, ул. Кузнецова, д. 16"
       phone   = "+78183752873"
       email   = "Upravdompluskotlas@yandex.ru"
       # Footer Sitemap
@@ -90,10 +94,13 @@ publishDir = "docs"
           url  = "about"
         [[params.footer.sitemap.link]]
           name = "Новости"
+          url  = "blog"
+        [[params.footer.sitemap.link]]
+          name = "Услуги"
           url  = "portfolio"
         [[params.footer.sitemap.link]]
-          name = "Контакты"
-          url  = "blog"
+          name = "Наши дома"
+          url  = "our_houses"
         [[params.footer.sitemap.link]]
           name = "Связаться с нами"
           url  = "contact"
@@ -116,3 +123,6 @@ publishDir = "docs"
       [params.footer.service]
         title       = ""
         description = ""
+
+[markup.goldmark.renderer]
+unsafe = true

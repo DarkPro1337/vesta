@@ -1,20 +1,71 @@
 {{ define "main" }}
 
+<style>
+.site-project-header {
+  background: #AD1113 url('{{ "img/bg-page-header.png" | absURL }}') 50% 50% no-repeat;
+  padding: 170px 0 75px;
+}
+.site-project-single-section {
+  padding: 50px 0 100px;
+}
+.header-link {
+  color: #fff;
+  text-decoration: none;
+}
+.header-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.site-blog.details {
+    padding: 50px 0 80px;
+}
+.site-project-header-content h2 {
+    font-size: 40px;
+    word-break: break-word;
+}
+html,body{
+    overflow-x: hidden;
+}
+</style>
+
+<section class="site-project-header">
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-lg-8">
+      <div class="site-project-header-content">
+        <p style="color: #fff;">
+          <a class="header-link" href="/">Главная</a>  /  <a class="header-link" href="/blog">Новости</a>
+        </p>
+        <h2 style="color: #fff;">
+          {{ .Title }}
+        </h2>
+        <p style="color: #fff;"><span><i class="fa fa-calendar" aria-hidden="true"></i> {{ $month_names := slice "Января" "Февраля" "Марта" "Апреля" "Мая" "Июня" "Июля" "Августа" "Сентября" "Октября" "Ноября" "Декабря" }} {{ $month := sub .PublishDate.Month 1 }}
+          {{ .PublishDate.Day }} {{ index $month_names $month }} {{ .PublishDate.Year }}</p>
+      </div>
+    </div>
+    <!--<div class="col-lg-4">
+      <a href="#project" class="site-project-header-action scroll-to">
+        <span></span>
+        <img src="{{ "images/arrow-down.svg" | absURL }}" alt="arrow-down">
+      </a>
+    </div>-->
+  </div>
+</div>
+</section>
 <section class="site-blog details">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-8">
+      <div class="col-lg-12">
         <article class="site-blog-details">
-          <p><span>{{ .PublishDate.Format "January 2, 2006" }}</span> by <span>{{ .Params.author }}</span></p>
-          <h2 class="blog-title">{{ .Title }}</h2>
-          <img class="feature-image" src="{{ .Params.feature_image | absURL }}" alt="blog-feature-image">
+          <!--<img class="feature-image" src="{{ .Params.feature_image | absURL }}" alt="blog-feature-image">-->
           {{ .Content }}
         </article>
+        <a href=".." class="btn btn-primary">Вернутся к списку новостей</a>
       </div>
     </div>
   </div>
 </section>
 
-{{ partial "call-to-action.html" . }}
+<!--{{ partial "call-to-action.html" . }}-->
 
 {{ end }}

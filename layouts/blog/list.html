@@ -1,5 +1,55 @@
 {{ define "main" }}
 
+<style>
+  .site-project-header {
+    background: #AD1113 url('{{ "img/bg-page-header.png" | absURL }}') 50% 50% no-repeat;
+  }
+  .site-project-header {
+      padding: 170px 0 75px;
+  }
+  .site-project-item-content, .site-blog-post-content {
+    position: unset;
+  }
+  .header-link {
+  color: #fff;
+  text-decoration: none;
+  }
+  .header-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .site-project-header-content h1 {
+    font-size: 40px;
+    word-break: break-word;
+  }
+  html,body{
+      overflow-x: hidden;
+  }
+</style>
+  
+  <section class="site-project-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="site-project-header-content">
+            <p style="color: #fff;">
+              <a class="header-link" href="/">Главная</a>
+            </p>
+            <h1 style="color: #fff;">
+              Новости
+            </h1>
+          </div>
+        </div>
+        <!--<div class="col-lg-4">
+          <a href="#project" class="site-project-header-action scroll-to">
+            <span></span>
+            <img src="{{ "images/arrow-down.svg" | absURL }}" alt="arrow-down">
+          </a>
+        </div>-->
+      </div>
+    </div>
+  </section>
+<!--
 <section class="site-blog-header">
   <div class="container">
     <div class="row justify-content-center">
@@ -12,7 +62,7 @@
     </div>
   </div>
 </section>
-
+-->
 <section class="site-blog">
   <div class="container">
     <div class="row">
@@ -25,12 +75,13 @@
           </div>
           {{ end }}
           <div class="site-blog-post-content">
-            <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
+            <span>{{ $month_names := slice "Января" "Февраля" "Марта" "Апреля" "Мая" "Июня" "Июля" "Августа" "Сентября" "Октября" "Ноября" "Декабря" }} {{ $month := sub .PublishDate.Month 1 }}
+              {{ .PublishDate.Day }} {{ index $month_names $month }} {{ .PublishDate.Year }}</span>
             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
             <p>
               {{ .Summary }} ...
             </p>
-            <a href="{{ .Permalink }}" class="read-more">read more</a>
+            <a href="{{ .Permalink }}" class="read-more">Читать далее...</a>
           </div>
         </article>
       </div>
@@ -44,6 +95,6 @@
   </div>
 </section>
 
-{{ partial "call-to-action.html" . }}
+<!--{{ partial "call-to-action.html" . }}-->
 
 {{ end }}

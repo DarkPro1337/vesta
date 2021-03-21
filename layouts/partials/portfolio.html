@@ -38,6 +38,12 @@
     .site-project-cta h2 {
       font-size: 18pt;
     }
+    .site-project, .site-blog {
+      padding: 20px 0;
+    }
+    .site-project-item-content a.read-more, .site-blog-post-content a.read-more {
+      bottom: 20px;
+    }
   </style>
 
   <section class="site-project" id="project">
@@ -45,11 +51,11 @@
       <div class="row">
         <div class="col-12">
           <div class="section-title">
-            <a href="portfolio" class="site-project-cta"><h2>{{ .title }} <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a>
+            <a href="blog" class="site-project-cta"><h2>{{ .title }} <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a>
             <p>{{ .subtitle }}</p>
           </div>
         </div>
-        {{ range first 3 (where $.Site.RegularPages "Type" "portfolio") }}
+        {{ range first 3 (where $.Site.RegularPages "Type" "blog") }}
         <div class="col-lg-4 col-md-10 mx-auto">
           <div class="site-project-item">
             <div class="site-project-item-thumb">
@@ -62,7 +68,7 @@
                 {{ .Date.Day }} {{ index $month_names $month }} {{ .Date.Year }}</span>
               <a href="{{ .Permalink }}" style="display: block;"><h3>{{ .Title }}</h3></a>
               <p class="previewtext">{{ .Summary }}</p>
-              <!--<a href="{{ .Permalink }}" class="read-more">Читать далее...</a>-->
+              <a href="{{ .Permalink }}" class="read-more">Читать далее...</a>
             </div>
           </div>
         </div>
