@@ -1,5 +1,17 @@
 {{ define "main" }}
+<style>
+@media (max-width: 766px) {
+  .contacts-map {
+    pointer-events: none;
+  }
+}
+.site-contact {
+    padding: 25px 0 100px;
+}
+</style>
+<div class="contacts-map hidden-xs">
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A675bb236219c278b9546176cfc2203d333c868f02ed373c1b46152d1c106b677&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+</div>
 <section class="site-contact">
   <div class="container">
     <h3>г. Котлас, ул. Кузнецова, д. 16</h3>

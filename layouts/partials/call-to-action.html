@@ -26,10 +26,17 @@
       box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
       color: #AD1113;
     }
+    @media (max-width: 766px) {
+    .contacts-map {
+      pointer-events: none;
+    }
+  } 
   </style>
   <section class="site-cta" style='background-image: url("{{ .background_image | absURL }}");'>
     <div class="map-title">Наши дома</div>
+    <div class="contacts-map hidden-xs">
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f08db3a5a56b6158cda36c64b0254ac6b66601b06398b9c07f3794b1ac9a34c&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
     <!--<div class="container">
       <div class="row">
         <div class="col-12 text-center">

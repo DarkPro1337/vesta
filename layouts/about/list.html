@@ -43,28 +43,37 @@
 </section>-->
 
 <style>
-  .site-project-header {
-    background: #AD1113 url('{{ "img/bg-page-header.png" | absURL }}') 50% 50% no-repeat;
-    padding: 170px 0 75px;
-  }
-  .site-project-single-section {
-    padding: 50px 0 100px;
-  }
-  .header-link {
-    color: #fff;
-    text-decoration: none;
-  }
-  .header-link:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  .site-blog.details {
-      padding: 50px 0 80px;
-  }
-  .site-project-header-content h2 {
-    font-size: 40px;
+.site-project-header {
+  background: #AD1113 url('{{ "img/bg-page-header.png" | absURL }}') 50% 50% no-repeat;
+  padding: 170px 0 75px;
 }
-  </style>
+.site-project-single-section {
+  padding: 50px 0 100px;
+}
+.header-link {
+  color: #fff;
+  text-decoration: none;
+}
+.header-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.site-blog.details {
+    padding: 50px 0 80px;
+}
+.site-project-header-content h2 {
+  font-size: 40px;
+}
+@media (max-width: 766px) {
+  .site-blog-details img {
+    max-width: 150px;
+    width: 150px;
+  }
+  table {
+    font-size: 9pt;
+  }
+}
+</style>
   
   <section class="site-project-header">
   <div class="container">
