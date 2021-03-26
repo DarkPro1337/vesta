@@ -55,12 +55,6 @@ html,body{
         </p>
       </div>
     </div>
-    <!--<div class="col-lg-4">
-      <a href="#project" class="site-project-header-action scroll-to">
-        <span></span>
-        <img src="{{ "images/arrow-down.svg" | absURL }}" alt="arrow-down">
-      </a>
-    </div>-->
   </div>
 </div>
 </section>
@@ -73,7 +67,6 @@ html,body{
           <p><span> <i class="fa fa-calendar" aria-hidden="true"></i> {{ $month_names := slice "Января" "Февраля" "Марта" "Апреля" "Мая" "Июня" "Июля" "Августа" "Сентября" "Октября" "Ноября" "Декабря" }} {{ $month := sub .PublishDate.Month 1 }}
             {{ .PublishDate.Day }} {{ index $month_names $month }} {{ .PublishDate.Year }}
           </p>
-          <!--<img class="feature-image" src="{{ .Params.feature_image | absURL }}" alt="blog-feature-image">-->
           {{ .Content }}
         </article>
         <a href=".." class="btn btn-primary">Вернутся к списку новостей</a>
@@ -81,7 +74,5 @@ html,body{
     </div>
   </div>
 </section>
-
-<!--{{ partial "call-to-action.html" . }}-->
 
 {{ end }}

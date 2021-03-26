@@ -8,7 +8,6 @@
   {{ with .Site.Params.author }}
   <meta name="author" content="{{ . }}">
   {{ end }}
-  {{ hugo.Generator }}
 
   {{ "<!-- Bootstrap -->" | safeHTML }}
   {{ $bootstrap := resources.Get "css/bootstrap.css" | minify }}
