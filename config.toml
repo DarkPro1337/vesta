@@ -3,6 +3,7 @@ languageCode  = "ru"
 title         = "ВЕСТА"
 summarylength = 25
 publishDir = "docs"
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # Site Menus
 [menu]
