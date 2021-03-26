@@ -43,9 +43,9 @@ publishDir = "docs"
   description = "Котласская Управляющая Компания"
   author = "ООО ВЕСТА"
   # Google Analitycs
-  googleAnalitycsID = "Your ID"
+  googleAnalitycsID = ""
   # We're using formspree.io for form handling, paste your formspree url below
-  formspreeFormUrl  = "https://formspree.io/myykjpje"
+  formspreeFormUrl  = "https://formspree.io/f/mpzkaoyz"
   
   # Navbar Action Button
   [params.navAction]

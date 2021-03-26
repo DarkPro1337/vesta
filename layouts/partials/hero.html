@@ -206,7 +206,7 @@
       grid-template-rows: repeat(2, max-content);
       grid-column-gap: 0px;
       grid-row-gap: 0px;
-      margin-top: 110px;
+      margin-top: 25px;
       margin-bottom: 15px;
       }
       
@@ -275,12 +275,57 @@
     justify-items: unset;
     }
   }
+  .site-project-header {
+  background: #AD1113 url('{{ "img/bg-page-header.png" | absURL }}') 50% 50% no-repeat;
+  padding: 125px 0 30px;
+  }
+  .site-project-single-section {
+    padding: 50px 0 100px;
+  }
+  .header-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  .header-text {
+    margin-bottom: 0;
+  }
+  .header-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .site-blog.details {
+      padding: 50px 0 80px;
+  }
+  .site-project-header-content h2 {
+    font-size: 40px;
+  }
+  @media (max-width: 766px) {
+    .site-blog-details img {
+      max-width: 150px;
+      width: 150px;
+    }
+    table {
+      font-size: 9pt;
+    }
+  }
   </style>
-  
+  <section class="site-project-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="site-project-header-content">
+            <p class="header-text" style="color: #fff;">
+              Главная
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div class="main">
   <div class="parent">
     <div class="div1">
-        <div class="hero_main"><div class="title">КОТЛАССКАЯ УПРАВЛЯЮЩАЯ КОМПАНИЯ</div></div>
+        <div class="hero_main"><div class="title"></div></div>
     </div>
     <div class="div2">
         <a class="hero-link" href="counters"><div class="counters">

@@ -100,7 +100,7 @@
 <style>
 .site-project-header {
   background: #AD1113 url('http://vesta.1gb.ru/img/bg-page-header.png') 50% 50% no-repeat;
-  padding: 170px 0 75px;
+  padding: 125px 0 30px;
 }
 .site-project-single-section {
   padding: 50px 0 100px;
@@ -116,12 +116,29 @@
 .site-blog.details {
     padding: 50px 0 80px;
 }
-.site-project-header-content h2 {
+.site-blog h2 {
     font-size: 40px;
     word-break: break-word;
 }
+.site-blog-details img {
+    width: 100%;
+}
 html,body{
     overflow-x: hidden;
+}
+@media (max-width: 766px) {
+  table {
+    width: 100%;
+    font-size: 9pt;
+  }
+  .site-blog h2 {
+    font-size: 20px;
+    word-break: break-word;
+  }
+  .site-blog h3 {
+    font-size: 15px;
+    word-break: break-word;
+  }
 }
 </style>
 
@@ -130,14 +147,9 @@ html,body{
   <div class="row align-items-center">
     <div class="col-lg-8">
       <div class="site-project-header-content">
-        <p style="color: #fff;">
-          <a class="header-link" href="/">Главная</a>  /  <a class="header-link" href="/blog">Новости</a>
+        <p style="color: #fff; margin-bottom: 0;">
+          <a class="header-link" href="/">Главная</a>  /  <a class="header-link" href="/blog">Новости</a> / В Котласе начался сезон ремонта дорог
         </p>
-        <h2 style="color: #fff;">
-          В Котласе начался сезон ремонта дорог
-        </h2>
-        <p style="color: #fff;"><span><i class="fa fa-calendar" aria-hidden="true"></i>  
-          17 Апреля 2020</p>
       </div>
     </div>
     
@@ -149,6 +161,10 @@ html,body{
     <div class="row justify-content-center">
       <div class="col-lg-12">
         <article class="site-blog-details">
+          <h2>В Котласе начался сезон ремонта дорог</h2>
+          <p><span> <i class="fa fa-calendar" aria-hidden="true"></i>  
+            17 Апреля 2020
+          </p>
           
           <p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
